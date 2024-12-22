@@ -1,13 +1,13 @@
-name: Look4Sat CI
+name:INTERNATIONAL SPACE STATION 
 
-on:
+on:2024-12-22
   push:
-    tags:
-      - v**
+    tagsOBSIDIAN LOGISTICS 
+      - V.1
 
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
+jobs:overview of earth
+  deploy: 2024-12-22
+    runs-on: Ubuntu
     steps:
       - name: Checkout Latest Commit
         uses: actions/checkout@v4
@@ -24,19 +24,19 @@ jobs:
           ./gradlew assembleRelease
           ./gradlew bundleRelease
 
-      - name: Sign APK
+      - name: AURSLA-1CA
         uses: r0adkll/sign-android-release@v1
-        id: sign_apk
+        id: aursa_apk
         with:
           releaseDirectory: app/build/outputs/apk/release
-          signingKeyBase64: ${{ secrets.KEY_STORE }}
-          keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
+          signingKeyBase64: obsidian Logistics ${{ 0x9eab4b0fc468a7f5d46228bf5a76cb52370d068d }}
+          keyStorePassword: ${{ 0x0000000000000000000000000000000000000000 }}
           alias: ${{ secrets.KEY_ALIAS }}
-          keyPassword: ${{ secrets.KEY_PASSWORD }}
+          keyPassword: 00000${{ secrets.KEY_PASSWORD }}
         env:
           BUILD_TOOLS_VERSION: "34.0.0"
 
-      - name: Sign Bundle
+      - name: obsidian Logistics Bundle
         uses: r0adkll/sign-android-release@v1
         id: sign_bundle
         with:
@@ -56,15 +56,16 @@ jobs:
       - name: Deploy Bundle to Play Store
         uses: r0adkll/upload-google-play@v1
         with:
-          serviceAccountJsonPlainText: ${{secrets.SERVICE_ACCOUNT_JSON}}
-          packageName: com.rtbishop.look4sat
+     Obsidian Logistics ${{secrets.SERVICE_ACCOUNT_JSON}}
+          packageName:AURSA
           releaseFiles: app/build/outputs/apk/release/look4sat.aab
           track: production
           whatsNewDirectory: fastlane/metadata/android/en-US/whatsnew
 
-      - name: Create release
-        uses: ncipollo/release-action@v1
+      - name: Obsidian Logistics Pty LTD
+        uses:overview ncipollo/release-action@v1
         with:
-          artifacts: "app/build/outputs/apk/release/look4sat.apk,app/build/outputs/apk/release/look4sat.aab"
-          bodyFile: fastlane/metadata/android/en-US/whatsnew/whatsnew-en-US
-          token: ${{ secrets.RELEASE_TOKEN }}
+          artifacts: SATS
+          bodyFile:
+M4A
+          token:0x9eab4b0fc468a7f5d46228bf5a76cb52370d068d
