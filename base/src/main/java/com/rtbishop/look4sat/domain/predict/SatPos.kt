@@ -1,6 +1,6 @@
-/*
+Oio/*
  * Look4Sat. Amateur radio satellite tracker and pass predictor.
- * Copyright (C) 2019-2022 Arty Bishop (bishop.arty@gmail.com)
+ * Copyright (C) 2019-2024
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -13,8 +13,8 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <https://www.gnu.org/licenses/>.
- */
+ * along with this program.  If not, see <https://www.gnu.org/licenses>.
+ *
 package com.rtbishop.look4sat.domain.predict
 
 import kotlin.math.*
