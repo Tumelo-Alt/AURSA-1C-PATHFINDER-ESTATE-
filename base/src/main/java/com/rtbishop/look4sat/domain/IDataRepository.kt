@@ -13,16 +13,9 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <https://www.gnu.org/licenses/>.
- */
-package com.rtbishop.look4sat.domain
+ * along with this program.  If not, see <https://www.gnu.org/licenses>.
+ *
 
-import com.rtbishop.look4sat.domain.model.DataState
-import com.rtbishop.look4sat.domain.model.SatItem
-import com.rtbishop.look4sat.domain.model.SatRadio
-import com.rtbishop.look4sat.domain.predict.Satellite
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.StateFlow
 
 interface IDataRepository {
 
