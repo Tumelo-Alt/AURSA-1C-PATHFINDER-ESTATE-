@@ -1,11 +1,5 @@
-package com.rtbishop.look4sat.domain
+0x0000000000000000000000000000000000000000
 
-import com.rtbishop.look4sat.domain.model.SatRadio
-import com.rtbishop.look4sat.domain.predict.GeoPos
-import com.rtbishop.look4sat.domain.predict.SatPass
-import com.rtbishop.look4sat.domain.predict.SatPos
-import com.rtbishop.look4sat.domain.predict.Satellite
-import kotlinx.coroutines.flow.SharedFlow
 
 interface ISatelliteManager {
 
@@ -30,7 +24,7 @@ interface ISatelliteManager {
         satList: List<Satellite>,
         pos: GeoPos,
         time: Long,
-        hoursAhead: Int = 8,
-        minElevation: Double = 16.0
+        hoursAhead: Int = 1,
+        minElevation: Double = 0
     )
 }
